@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+    <style>
+        .searchBar{
+            position: absolute;
+            left: 2%;
+        }
+        #searchBar{
+            height: 5vh;
+            width: 50vw;
+         outline: none;
+         padding: 2px;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h2>Invenetory System</h2>
+    </div>
+
+    <div class="title">
+        <h2 class="title-h2">Book Inventory System</h2>
+        <div class="buttons-clicked">
+            <button id="addhover">Add</button>
+            <button id="Update-hover">Update</button>
+            <button id="Delete-hover">Delete</button>
+        </div>
+    </div>
+    <div class="searchBar">
+        <input type="search" placeholder="Search Author, Books" id="searchBar">
+    </div>
+    <div class="container-section" id="container-section" >
+    <form action="http://localhost:3000/add-Inventory-System" method="POST">
+        <input type="number" name="quantity">
+        <input type="text" name="title" placeholder="title">
+        <input type="text" name="author" placeholder="author">
+        <input type="text" name="price" placeholder="price">
+        <input type="submit" id="submit" value="Enter">
+    </form>
+</div>
+<div class="inputsearch" id="inputsearch">
+    <h2 id="somaiRice"></h2>
+</div>
+    <table id="myTable">
+        <tr>
+            <td class="mainQ">Quantity</td>
+            <td class="mainT">Book Title</td>
+            <td class="mainA">Author</td>
+            <td class="mainP">Price</td>
+        </tr>
+        <tr>
+            <td id="quantity"></td>
+            <td id="title"></td>
+            <td id="author"></td>
+            <td id="price"></td>
+        </tr>
+    </table>
+
+    <script src="main.js"></script>
+    <script>
+    
+    </script>
+</body>
+</html>

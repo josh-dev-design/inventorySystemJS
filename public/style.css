@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: 'Poppins';
+    width: auto;
+    height: auto;
+}
+table{
+    position: absolute;
+    top: 400px;
+    left: 180px;
+    color: black;
+}
+
+td{
+    transform: scale(-50%,-50%);
+    width: 500px;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+  
+
+}
+td:nth-child(odd){
+    background-color: lightblue;
+}
+td:nth-child(even){
+    background-color: #d7d7d7;
+}
+td:nth-child(1){
+    width: 6rem;
+
+}
+td:nth-child(4){
+    width: 6rem;
+}
+.container{
+    background-color: #2b2b2b;
+    height: 80px;
+}
+h2{
+    color: #ffffff;
+    padding: 20px;
+}
+.container-section{
+    position: relative;
+    top: 50px;
+    margin: 1px;
+    padding: 5px;
+    width: 100%;
+    display: none;
+}
+
+input{
+    position: relative;
+    left: 330px;
+    width: 10%;
+    height: 25px;
+    outline: noen;
+}input::placeholder{
+    padding: 5px;
+}
+.title-h2{
+    color: #222222;
+    text-align: center;
+    font-size: 50px;
+}
+.buttons-clicked{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+#addhover{
+    width: 70px;
+    height:30px;
+    margin: 5px;
+    background-color: rgb(8, 184, 8);
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#Update-hover{
+    width: 70px;
+    height:30px;
+    margin: 5px;
+    background-color: rgb(111, 25, 209);
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#Delete-hover{
+    width: 70px;
+    height:30px;
+    margin: 5px;
+    background-color: rgb(184, 8, 8);
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
